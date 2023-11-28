@@ -1,5 +1,4 @@
 .pace-done #global-container {
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
   opacity: 1;
 }
@@ -21,8 +20,7 @@
 }
 
 .pace .pace-progress {
-  -webkit-transform: none !important;
-          transform: none !important;
+  transform: none !important;
   text-align: center;
 }
 
@@ -31,7 +29,7 @@
   display: block;
   font-weight: 100;
   font-size: 2em;
-  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
+  font-family: "Helvetica Neue", "Yu Gothic", "Meiryo", sans-serif;
   color: #535353;
 }
 
@@ -42,51 +40,25 @@
 .pace-progress-inner {
   width: 40px;
   height: 40px;
-  background-color: #904669;
+  background-color: #23704c;
   margin: 0 auto;
-  -webkit-animation-name: sk-rotateplane;
-          animation-name: sk-rotateplane;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
-  }
+  animation-name: sk-rotateplane;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 @keyframes sk-rotateplane {
   0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
   }
   50% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
   }
   100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
   }
-}
-/*# sourceMappingURL=loader.css.map */
+}/*# sourceMappingURL=loader.css.map */
